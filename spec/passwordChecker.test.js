@@ -1,4 +1,4 @@
-const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber } = require('../passwordChecker.js');
+const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber, containsNoIPL } = require('../passwordChecker.js');
 
 // Test if the password is valid
 
