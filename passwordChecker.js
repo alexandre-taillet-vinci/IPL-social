@@ -1,7 +1,7 @@
 
 // Check if the password is valid
 function passwordChecker(password) {
-    return moreThan8Characters(password) && hasSpecialCharacters(password);
+    return moreThan8Characters(password) && hasSpecialCharacters(password) && hasNumber(password);
 }
 
 
@@ -24,5 +24,6 @@ function hasNumber(password) {
 module.exports = {
     passwordChecker,
     moreThan8Characters,
-    hasSpecialCharacters
+    hasSpecialCharacters,
+    hasNumber
 };
