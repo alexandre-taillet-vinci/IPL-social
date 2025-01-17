@@ -1,0 +1,22 @@
+{
+  "name": "ipl-social",
+  "version": "1.0.0",
+  "description": "TAILLET Alexandre alexandre.taillet@student.vinci.be",
+  "main": "passwordChecker.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexandre-taillet-vinci/IPL-social.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexandre-taillet-vinci/IPL-social/issues"
+  },
+  "homepage": "https://github.com/alexandre-taillet-vinci/IPL-social#readme",
+  "devDependencies": {
+    "jasmine": "^5.5.0"
+  }
+}
