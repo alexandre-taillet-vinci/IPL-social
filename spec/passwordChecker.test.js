@@ -14,3 +14,18 @@ describe('Less than 8 characters', () => {
         expect(passwordChecker('1234567!')).toBe(true);
     });
 });
+
+// Test if the password has special characters
+describe('Special characters', () => {
+    it('should return false', () => {
+        expect(hasSpecialCharacters('abcde')).toBe(false);
+        expect(passwordChecker('12345678')).toBe(false);
+    });
+
+    it('should return true', () => {
+        expect(hasSpecialCharacters('abc!')).toBe(true);
+        expect(passwordChecker('1234567!')).toBe(true);
+    });
+});
+
+
