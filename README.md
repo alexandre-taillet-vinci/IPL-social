@@ -10,4 +10,5 @@ there is:
 - At least 1 special character
 - At least 1 digit
 - No IPL character in no case sensitive
- you can run the test with npm run test
+
+### you can run the test with npm run test
