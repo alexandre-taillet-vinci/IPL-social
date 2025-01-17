@@ -28,4 +28,16 @@ describe('Special characters', () => {
     });
 });
 
+// Test if the password has Number
+describe('Number', () => {
+    it('should return false', () => {
+        expect(hasNumber('abcde')).toBe(false);
+        expect(passwordChecker('abcde')).toBe(false);
+    });
+
+    it('should return true', () => {
+        expect(hasNumber('abc1')).toBe(true);
+        expect(passwordChecker('abc1')).toBe(true);
+    });
+});
 
