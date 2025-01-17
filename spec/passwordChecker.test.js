@@ -41,3 +41,16 @@ describe('Number', () => {
     });
 });
 
+// Test if the password has no IPL in no case sensitive
+describe('IPL in no case sensitive', () => {
+    it('should return false', () => {
+        expect(containsNoIPL('TestIpL')).toBe(false);
+        expect(passwordChecker('abcdef1!iPL')).toBe(false);
+    });
+
+    it('should return true', () => {
+        expect(containsNoIPL('Test')).toBe(true);
+        expect(passwordChecker('abcdef1!')).toBe(true);
+    });
+});
+
