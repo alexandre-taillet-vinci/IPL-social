@@ -1,4 +1,4 @@
-const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber } = require('../passwordChecker.js');
+const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber, containsNoIPL } = require('../passwordChecker.js');
 
 // Test if the password is valid
 
@@ -37,6 +37,19 @@ describe('Number', () => {
 
     it('should return true', () => {
         expect(hasNumber('abc1')).toBe(true);
+        expect(passwordChecker('abcdef1!')).toBe(true);
+    });
+});
+
+// Test if the password has no IPL in no case sensitive
+describe('IPL in no case sensitive', () => {
+    it('should return false', () => {
+        expect(containsNoIPL('TestIpL')).toBe(false);
+        expect(passwordChecker('abcdef1!iPL')).toBe(false);
+    });
+
+    it('should return true', () => {
+        expect(containsNoIPL('Test')).toBe(true);
         expect(passwordChecker('abcdef1!')).toBe(true);
     });
 });
