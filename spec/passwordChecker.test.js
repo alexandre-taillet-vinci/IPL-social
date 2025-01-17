@@ -1,4 +1,6 @@
 const { passwordChecker } = require('../passwordChecker.js');
+
+// Test if the password is valid
 describe('Less than 8 characters', () => {
     it('should return false', () => {
         expect(passwordChecker('1234567')).toBe(false);
