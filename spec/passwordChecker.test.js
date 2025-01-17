@@ -1,4 +1,4 @@
-const { passwordChecker, moreThan8Characters, hasSpecialCharacters } = require('../passwordChecker.js');
+const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber } = require('../passwordChecker.js');
 
 // Test if the password is valid
 
@@ -28,4 +28,16 @@ describe('Special characters', () => {
     });
 });
 
+// Test if the password has Number
+describe('Number', () => {
+    it('should return false', () => {
+        expect(hasNumber('abcde')).toBe(false);
+        expect(passwordChecker('abcdefg!')).toBe(false);
+    });
+
+    it('should return true', () => {
+        expect(hasNumber('abc1')).toBe(true);
+        expect(passwordChecker('abcdef1!')).toBe(true);
+    });
+});
 
