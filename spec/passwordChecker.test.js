@@ -1,7 +1,5 @@
 const { passwordChecker, moreThan8Characters, hasSpecialCharacters, hasNumber, containsNoIPL } = require('../passwordChecker.js');
 
-// Test if the password is valid
-
 // Test if the password is less than 8 characters
 describe('Less than 8 characters', () => {
     it('should return false', () => {
@@ -53,4 +51,3 @@ describe('IPL in no case sensitive', () => {
         expect(passwordChecker('abcdef1!')).toBe(true);
     });
 });
-

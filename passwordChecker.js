@@ -1,9 +1,7 @@
-
 // Check if the password is valid
 function passwordChecker(password) {
     return moreThan8Characters(password) && hasSpecialCharacters(password) && hasNumber(password) && containsNoIPL(password);
 }
-
 
 // Check if the password is more than 8 characters
 function moreThan8Characters(password) {
@@ -24,7 +22,6 @@ function hasNumber(password) {
 function containsNoIPL(password) {
     return !password.toLowerCase().includes('ipl');
 }
-
 
 module.exports = {
     passwordChecker,
